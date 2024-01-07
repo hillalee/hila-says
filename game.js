@@ -6,7 +6,6 @@ var userClickedPattern = [];
 // initialize variables
 var checkStart = true;
 var level = 1;
-$("#endMessage").text(" ");
 
 
 
@@ -18,6 +17,8 @@ $(document).keypress(function() {
         nextSequence();
         // $("h1").fadeOut().fadeIn().text("୨⎯ Level 0 ⎯୧");
         $("h1").text("୨⎯ Level 0 ⎯୧");
+        $("#endMessage").text(" ");
+
     }
 });
 
@@ -46,11 +47,11 @@ function checkAnswer(currentLevel) {
         playSound("wrong");
         $("body").addClass("game-over");
         $("#level-title").text("Game Over! (◡︵◡)");
+        $("#endMessage").text("Press Any Key to Restart! (unless you're Yair, there's no hope for you :( ) ");
 
         setTimeout(function() {
             $("body").removeClass("game-over");
         }, 200);
-        $("#endMessage").text("Press Any Key to Restart! (unless you're Yair, there's no hope for you :( ) ");
         startOver();
     }
 }
