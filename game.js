@@ -5,7 +5,7 @@ var userClickedPattern = [];
 
 // initialize variables
 var checkStart = true;
-var level = 1;
+var level = 0;
 
 
 
