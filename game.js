@@ -50,7 +50,7 @@ function checkAnswer(currentLevel) {
             $("body").removeClass("game-over");
         }, 200);
         $("#endMessage").text("Press Any Key to Restart! (unless you're Yair, there's no hope for you :( ) ");
-
+ 
         startOver();
     }
 }
@@ -87,6 +87,7 @@ function animatePress(currentColor) {
 
 // restart the game
 function startOver() {
+    $("#endMessage").text("");
     level = 0;
     gamePattern = [];
     checkStart = true; // Reset the checkStart to true for the next game
