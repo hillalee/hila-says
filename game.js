@@ -16,8 +16,7 @@ $(document).keypress(function() {
         checkStart = false;
         nextSequence();
         // $("h1").fadeOut().fadeIn().text("୨⎯ Level 0 ⎯୧");
-        $("h1").text("୨⎯ Level 0 ⎯୧");
-        $("#endMessage").text(" ");
+        $("h1").text("୨⎯ Level 1 ⎯୧");
 
     }
 });
@@ -69,6 +68,9 @@ function nextSequence() {
     // button flashes
     $("#" + randomChosenColor).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
     playSound(randomChosenColor);
+
+    $("#endMessage").text(" ");
+
 }
 
 // make sound
