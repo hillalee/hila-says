@@ -1,0 +1,80 @@
+body {
+  text-align: center;
+  background-color: #FFD3E0; /* Light pink background */
+  position: relative; /* Make sure the hearts are positioned relative to the body */
+}
+
+body::before {
+  content: '\2665'; /* Unicode heart character */
+  font-size: 20px; /* Size of the hearts */
+  color: #FF6B81; /* Darker pink color for hearts */
+  position: absolute;
+  z-index: -1; /* Move hearts behind other elements */
+  pointer-events: none; /* Allow clicks to go through the hearts to underlying elements */
+  opacity: 0.3; /* Adjust the opacity of the hearts */
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  height: 3.5rem;
+  align-items: center;
+  font-size: 3rem;
+  margin-bottom: 2%;
+  color: #FFF; /* White text for better visibility */
+  background-color: #FF6B81; /* Solid pink background */
+  padding: 10px 20px; /* Add some padding for better aesthetics */
+  border-radius: 10px; /* Add a slight border radius */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text outline/glow */
+}
+
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid rgba(145, 46, 46, 0.603);
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: #FF3031; /* Darker red background */
+  opacity: 0.8;
+}
+
+.red {
+  background-color: #FF4757; /* Lighter red button */
+}
+
+.green {
+  background-color: #00B894; /* Light green button */
+}
+
+.blue {
+  background-color: #0652DD; /* Light blue button */
+}
+
+.yellow {
+  background-color: #FFD32A; /* Light yellow button */
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: #B33771; /* Lighter grey pressed effect */
+}
+
+#myName {
+  font-family: 'Salsa', cursive;
+}
+
+#endMessage {
+  font-family: 'Salsa', cursive;
+  color: #FF6B81; /* White text color */
+  text-shadow: 2px 2px 4px #ffffff; /* Text shadow with pinkish tint */
+}
