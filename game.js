@@ -5,7 +5,8 @@ var userClickedPattern = [];
 
 // initialize variables
 var checkStart = true;
-var level = 0;
+var level = 1;
+$("#endMessage").text(" ");
 
 
 
@@ -86,7 +87,6 @@ function animatePress(currentColor) {
 
 // restart the game
 function startOver() {
-    $("#endMessage").text(" ");
     level = 0;
     gamePattern = [];
     checkStart = true; // Reset the checkStart to true for the next game
